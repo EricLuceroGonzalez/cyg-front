@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+:root {
+  --color-bg: #000;
+  --color-fg: rgb(255, 255, 255);
+  --color-hover: #76f7ac;
+  --color-peach: #ff8f7d;
+  --color-green: #76f7ac;
+  --color-warning: #f5e23b;
+  --color-indigo: rgb(99,102,241);
+  --color-cyan: #1c98eb;
+  --color-approved: #00ad45;
+  --color-ws: #25d366;
+  --color-error-fg: #fc6666;
+  --color-canceled: #ff0000;
+  --color-primary: #8de667;
+  --color-secondary: rgb(103, 189, 66);
+  --color-gray: rgb(209, 209, 209);
+  --color-gray-bg: rgb(235, 235, 235);
+  --color-white-bg: rgb(253, 251, 242);
+  --color-blue: #273755;
+  --color-red: #f11818;
+  --color-fb: rgb(0, 120, 255);
+  --color-blue-light: #435c8a;
+}
+
+.bordeA{
+  border: 1px solid red;
+}

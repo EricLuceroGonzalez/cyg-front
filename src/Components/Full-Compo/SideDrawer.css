@@ -1,0 +1,203 @@
+.side-drawer {
+    position: fixed;
+    left: 40%;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 60%;
+    margin-top: 60px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    /* transition: width 2s; */
+    overflow-y: auto;
+}
+
+.left-drawer {
+    position: fixed;
+    right: 65%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 35%;
+    margin-top: 60px;
+    /* background: var(--color-gray); */
+    /* opacity: 0.8; */
+    /* box-shadow: 0 2p x 8px rgba(0, 0, 0, 0.26); */
+    /* transition: width 2s; */
+    overflow-y: auto;
+}
+
+.side-head {
+    background-color: var(--color-blue);
+    color: var(--color-fg);
+    padding: 0.8rem 1rem;
+}
+
+.side-body {
+    margin: 1rem auto;
+    color: var(--color-bg);
+}
+
+.side-row {
+    padding: 0.6rem 0 0.2rem 0.6rem;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.26); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+.docs {
+    font-family: Montserrat-ExtraBold;
+    background-color: var(--color-primary);
+    color: var(--color-blue);
+    padding: 6px 3px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.docs:hover {
+    background-color: var(--color-gray);
+    color: var(--color-primary);
+}
+
+.no-docs {
+    font-family: Montserrat-ExtraBold;
+    background-color: var(--color-gray);
+    color: var(--color-blue);
+    padding: 6px 3px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.nameHead {
+    font-family: Montserrat-ExtraBold;
+    border-bottom: 1px solid var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.side-head span {
+    font-family: Montserrat-ExtraBold;
+}
+
+.side-head p {
+    font-family: Montserrat-Light;
+}
+
+.side-row h4 {
+    font-family: Montserrat-Medium;
+}
+
+.side-row p {
+    font-family: Montserrat-Light;
+}
+
+.money-in {
+    color: var(--color-secondary);
+}
+
+.money-out {
+    color: var(--color-error-fg);
+}
+
+.sideLabel {
+    font-family: Montserrat-Bold;
+    color: var(--color-bg);
+    /* border-bottom: 1px solid var(--color-bg); */
+}
+
+.head-subtitle {
+    margin-left: 1rem;
+}
+
+.side-icon {
+    color: var(--color-secondary);
+    margin-right: 4px;
+}
+
+.statusIcon {
+    font-size: 1.5rem;
+    padding: 0 5px;
+}
+
+.contacted {
+    color: var(--color-cyan);
+}
+
+.pending {
+    color: var(--color-warning);
+}
+
+.approved {
+    color: var(--color-approved);
+}
+
+.notApproved {
+    color: var(--color-canceled);
+}
+
+.fonthead {
+    color: var(--color-blue);
+    background-color: var(--color-fg);
+    padding: 8px 5px;
+    border-radius: 22px;
+    /* margin-top: 40px; */
+    font-size: 1.26rem;
+    text-align: center;
+}
+
+.right-side {
+    text-align: end;
+    font-size: 1.6rem;
+    color: var(--color-gray);
+}
+
+.right-side:hover {
+    color: var(--color-red);
+    cursor: pointer;
+}
+
+.actionSideDrawer {
+    background-color: var(--color-gray);
+}
+
+.show-docs-img {
+    padding: 1rem 0.25rem;
+    background-color: white;
+    animation: 0.4s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.carousel-icon {
+    font-size: 4rem;
+    vertical-align: middle;
+    margin: auto;
+    cursor: pointer;
+}
+
+.carousel-icon:hover {
+    color: var(--color-secondary);
+    border: none;
+}
+
+.carousel-close {
+    color: var(--color-blue);
+    position: absolute;
+    font-size: 1.2rem;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.visit-nodoc {
+    background-color: var(--color-warning);
+}
