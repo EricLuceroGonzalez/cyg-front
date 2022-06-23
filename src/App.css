@@ -66,3 +66,9 @@
 .bordeA{
   border: 1px solid red;
 }
+.bordeB{
+  border: 1px solid blue;
+}
+.bordeC{
+  border: 1px solid indigo;
+}
