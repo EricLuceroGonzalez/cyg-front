@@ -31,9 +31,9 @@ export default function FormComment(props) {
   };
   return (
     <Fragment>
-      <div className="text-center">
-        <h2 className="font-bold text-2xl text-indigo-500">{props.contact}</h2>
-        <h2 className="font-500">Participa en la encuesta,</h2>
+      <div className="text-center my-8">
+        <h2 className="font-bold text-lg text-indigo-500">Hola, {props.contact}</h2>
+        <h2 className="font-500">¿Estás satisfecho con el producto?</h2>
       </div>
       <form className="w-full max-w-sm mr-auto ml-auto" onSubmit={sendComment}>
         <div className="flex justify-center">
@@ -47,7 +47,7 @@ export default function FormComment(props) {
               onChange={() => setCheckBox(true)}
             ></input>
             <label
-              className="form-check-label inline-block text-gray-800"
+              className="form-check-label inline-block text-gray-800 font-bold"
               htmlFor="inlineRadio10"
             >
               Sí
@@ -63,7 +63,7 @@ export default function FormComment(props) {
               onChange={() => setCheckBox(false)}
             ></input>
             <label
-              className="form-check-label inline-block text-gray-800"
+              className="form-check-label inline-block text-gray-800  font-bold"
               htmlFor="inlineRadio20"
             >
               No

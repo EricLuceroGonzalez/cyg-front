@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
 import "./MainNavigation.css";
@@ -36,7 +35,7 @@ const Navigation = (props) => {
           <Link to="/">
             <img
               className="logoSize"
-              src='https://res.cloudinary.com/dcvnw6hvt/image/upload/v1591904335/zsgc9lzxenzocefwvuvx.png'
+              src={`${process.env.REACT_APP_COMENTA_Y_GANA_WHITE_LOGO}`}
               alt="plazo fácil logo green box with check mark"
             ></img>
           </Link>

@@ -1,8 +1,18 @@
-import { Fragment, React, useState } from "react";
+import { Fragment, React, useEffect, useState } from "react";
 import Input from "../UI/Input";
 
 export default function FormContact(props) {
   const [invalidEmail, setInvalidEmail] = useState(false);
+  const [validButton, setValidButton] = useState(false)
+  useEffect(() => {
+    console.log(props.contactData);
+    if (props.contactData.formName !== "" && props.contactData.formEmail !== "" && props.contactData.formNumber !== "") {
+      setValidButton(true)
+    }
+    if (invalidEmail) {
+      setValidButton(false)
+    }
+  }, [props.contactData]);
   const handleChange = (e) => {
     e.preventDefault();
     props.setContact({ ...props.contactData, [e.target.name]: e.target.value });
@@ -75,11 +85,11 @@ export default function FormContact(props) {
           </div>
           <button
             className={`mt-6 flex-shrink-0 text-sm border-4 text-white py-1 px-2 rounded font-bold ${
-              invalidEmail
+              !validButton
                 ? " bg-gray-500 hover:bg-gray-700 border-gray-500 hover:border-gray-700"
                 : " bg-indigo-500 hover:bg-indigo-700 border-indigo-500 hover:border-indigo-700"
             }`}
-            disabled={invalidEmail ? true : false}
+            disabled={!validButton}
             type="submit"
           >
             Seguir

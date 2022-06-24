@@ -10,6 +10,7 @@ import { Routes } from "react-router-dom";
 import {AuthContext} from './Components/context/auth-context';
 import Navigation from "./Components/Full-Compo/Navigation";
 import Survey from "./Components/Full-Compo/Survey";
+import Footer from "./Components/Full-Compo/Footer";
 // import Navigation from "./shared/Navigation/Navigation";
 // const NotFoundComponent = React.lazy(() =>
 //   import("./shared/pages/NotFoundComponent")
@@ -61,9 +62,9 @@ function App() {
             {routes}
           </Suspense>
         </main>
-        {/* <footer> */}
-          {/* <Footer /> */}
-        {/* </footer> */}
+        <footer>
+          <Footer/>
+        </footer>
       </Router>
     </AuthContext.Provider>
   );
